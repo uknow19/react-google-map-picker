@@ -114,6 +114,8 @@ var MapPicker = function MapPicker(_ref) {
     } else {
       marker.current.setPosition(validLocation);
     }
+    
+    console.log(marker);
 
     map.current.addListener('click', function (event) {
       var clickedLocation = event.latLng;
